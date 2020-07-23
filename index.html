@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function compute_first(cb) { cb(10) } 
+ function compute_second(a,  cb) { cb(a-1); }
+ function compute_third(a,cb)   {   cb(a-1);}
+ function compute_fourth(a,cb)   {   cb(a-1);}
+ function compute_fifth(a,cb)   {   cb(a-1);}
+ function compute_sixth(a,cb)   {   cb(a-1);}
+ function compute_seventh(a,cb)   {   cb(a-1);}
+ function compute_eight(a,cb)   {   cb(a-1);}
+ function compute_nineth(a,cb)   {   cb(a-1);}
+ function compute_tenth(a,cb)   {   cb(a-1);}
+ function compute_greeting(greet){ greet("HAPPY MORNING")}
+
+function compute_a_result() {
+      compute_first(function (one) {
+        console.log(one);
+          compute_second(one, function(two) {
+                 console.log(two)
+            compute_third(two,function(three){
+                    console.log(three);
+            compute_fourth(three,function(four){
+                    console.log(four);
+           compute_fifth(four,function(five){
+                    console.log(five);
+            compute_sixth(five,function(six){
+                    console.log(six);
+            compute_seventh(six,function(seven){
+                    console.log(seven);
+            compute_eight(seven,function(eight){
+                    console.log(eight);
+           compute_nineth(eight,function(nine){
+                    console.log(nine);
+            compute_tenth(nine,function(ten){
+                    console.log(ten);
+                    compute_greeting(function(greet) {
+                         console.log(greet);
+                    });
+            });
+           });
+            });
+            });
+
+             });
+          });
+            });
+                       
+        });
+    });
+
+});
+}
+compute_a_result();
+
+</script>
+</body>
+</html>
